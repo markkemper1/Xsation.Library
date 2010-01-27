@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xsation.Library", "Xsation.Library.csproj", "{83B4FCE5-7534-4E11-ABAE-8313DD986287}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Live|Any CPU = Live|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83B4FCE5-7534-4E11-ABAE-8313DD986287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B4FCE5-7534-4E11-ABAE-8313DD986287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B4FCE5-7534-4E11-ABAE-8313DD986287}.Live|Any CPU.ActiveCfg = Live|Any CPU
+		{83B4FCE5-7534-4E11-ABAE-8313DD986287}.Live|Any CPU.Build.0 = Live|Any CPU
+		{83B4FCE5-7534-4E11-ABAE-8313DD986287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B4FCE5-7534-4E11-ABAE-8313DD986287}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83B4FCE5-7534-4E11-ABAE-8313DD986287}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xsation.Mvc.Helpers</RootNamespace>
+    <AssemblyName>Xsation.Mvc.Helpers</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Live|AnyCPU' ">
+    <OutputPath>bin\Live\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Email\EmalService.cs" />
+    <Compile Include="Email\FileSystemTemplateStorage.cs" />
+    <Compile Include="Email\ISender.cs" />
+    <Compile Include="Email\ITemplateStorage.cs" />
+    <Compile Include="Email\Processor.cs" />
+    <Compile Include="Email\Recipient.cs" />
+    <Compile Include="Email\SmtpSender.cs" />
+    <Compile Include="Email\Template.cs" />
+    <Compile Include="Email\Tokens.cs" />
+    <Compile Include="Web\Mvc\Assets\AssetController.cs" />
+    <Compile Include="Web\Mvc\Assets\CssFileResult.cs" />
+    <Compile Include="Web\Mvc\Assets\JpegResult.cs" />
+    <Compile Include="Web\Mvc\Assets\ScriptFileResult.cs" />
+    <Compile Include="Web\Mvc\Assets\StaticFileResult.cs" />
+    <Compile Include="Web\Urls\Config\Configuration.cs" />
+    <Compile Include="Web\Urls\Config\ConfigurationHelper.cs" />
+    <Compile Include="Web\Mvc\General.cs" />
+    <Compile Include="Web\Mvc\RadioHelper.cs" />
+    <Compile Include="Web\Mvc\TextboxHelper.cs" />
+    <Compile Include="Web\HtmlElements\div.cs" />
+    <Compile Include="Web\HtmlElements\form.cs" />
+    <Compile Include="Web\HtmlElements\li.cs" />
+    <Compile Include="Web\HtmlElements\meta.cs" />
+    <Compile Include="Web\HtmlElements\xhtmlExtensions.cs" />
+    <Compile Include="Web\CssManager.cs" />
+    <Compile Include="Web\Extensions.cs" />
+    <Compile Include="Web\ImageManager.cs" />
+    <Compile Include="Web\Urls\IResolveUrls.cs" />
+    <Compile Include="Web\Urls\Config\IMapUrlConfiguration.cs" />
+    <Compile Include="Web\MetaManager.cs" />
+    <Compile Include="Web\ScriptManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\HtmlElements\a.cs" />
+    <Compile Include="Web\HtmlElements\element.cs" />
+    <Compile Include="Web\HtmlElements\ElementExtensions.cs" />
+    <Compile Include="Web\Urls\MappedUrlResolver.cs" />
+    <Compile Include="Web\Urls\UrlResolver.cs" />
+    <Compile Include="Web\xhtml.cs" />
+    <Compile Include="Web\HtmlElements\img.cs" />
+    <Compile Include="Web\HtmlElements\input.cs" />
+    <Compile Include="Web\HtmlElements\InterfaceExtensions.cs" />
+    <Compile Include="Web\HtmlElements\Interfaces.cs" />
+    <Compile Include="Web\HtmlElements\IRenderTo.cs" />
+    <Compile Include="Web\HtmlElements\label.cs" />
+    <Compile Include="Web\HtmlElements\link.cs" />
+    <Compile Include="Web\HtmlElements\option.cs" />
+    <Compile Include="Web\HtmlElements\RenderHelpers.cs" />
+    <Compile Include="Web\HtmlElements\script.cs" />
+    <Compile Include="Web\HtmlElements\select.cs" />
+    <Compile Include="Web\HtmlElements\text.cs" />
+    <Compile Include="Web\HtmlElements\textarea.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
